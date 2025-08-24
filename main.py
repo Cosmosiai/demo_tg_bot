@@ -1,7 +1,11 @@
 import telebot
+from dotenv import load_dotenv
+import os
+
 print('hello world')
 
-bot = telebot.TeleBot("")
+load_dotenv
+bot = telebot.TeleBot(os.getenv('TOKEN'))
 
 @bot.message_handler(content_types=['text'])
 def get_text_messages(messege):
