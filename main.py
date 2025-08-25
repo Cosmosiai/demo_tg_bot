@@ -4,7 +4,7 @@ import os
 
 print('hello world')
 
-load_dotenv
+load_dotenv()
 bot = telebot.TeleBot(os.getenv('TOKEN'))
 
 @bot.message_handler(content_types=['text'])
