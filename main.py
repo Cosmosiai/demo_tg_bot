@@ -7,7 +7,7 @@ import User
 import status
 
 load_dotenv()
-
+connection.init_db()
 bot = telebot.TeleBot(os.getenv('TOKEN'))
 user_states = {}
 

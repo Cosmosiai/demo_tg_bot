@@ -1,8 +1,6 @@
 import sqlite3
 from dotenv import load_dotenv
 import os
-import User
-import sqlalchemy as sa
 
 load_dotenv()
 
